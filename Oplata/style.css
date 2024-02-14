@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    font-size: 20px;
+    padding: 50px 180px;
+    background: #F8F8F8;
+}
+.main{
+    display: grid;
+    row-gap: 30px;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.img_1{
+    grid-row: 1/1;
+    grid-column: 1/1;
+    height: 420px;
+    width: 100%;
+}
+.text_top{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    color: #343434;
+}
+.text-top-container h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.text-top-container{
+    display: grid;
+    line-height: 24px;
+}
+.text-top-container ul{
+    list-style-type: disc;
+}
+.text-alert-background{
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #EB9590;
+}
+.text-alert{
+    padding: 30px 26px;
+}
+.img_2{
+    grid-row: 2/2;
+    grid-column: 2/2;
+    height: 420px;
+    width: 100%;
+}
+.text-bottom{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    color: #343434;
+    line-height: 24px;
+}
+.icon_card-visa{
+    padding: 40px 20px 60px 0;
+    height: 25px;
+    width: 77px;
+}
+.icon_card-sber{
+    padding: 40px 20px 60px 0;
+    height: 25px;
+    width: 92px;
+}
+.icon_card-gpay{
+    padding: 40px 20px 60px 0;
+    height: 25px;
+    width: 63px;
+}
+.icon_card-alfa{
+    padding: 40px 20px 60px 0;
+    height: 25px;
+    width: 85px;
+}
+.icon_card-master_card{
+    padding: 40px 20px 60px 0;
+    height: 25px;
+    width: 42px;
+}
+.icon_card-mir{
+    padding: 40px 20px 60px 0;
+    height: 25px;
+    width: 71px;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalog h2{
+    padding-bottom: 5px;
+    width: 560px;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #EB9590;
+}
+.btn-catalog{
+    color: #EB9590;
+    font-weight: 600;
+    font-size: 15px;
+    height: 46px;
+    width: 120px;
+    border-radius: 8px;
+    border: 2px solid #EB9590;
+}
+@media{
+
+}
