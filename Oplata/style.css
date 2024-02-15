@@ -4,21 +4,25 @@ body{
 }
 .container{
     font-size: 20px;
-    padding: 50px 180px;
+    padding: 90px 140px;
     background: #F8F8F8;
 }
 .main{
     display: grid;
-    row-gap: 20px;
+    row-gap: 30px;
     column-gap: 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
 .img_1{
+    display: block;
     grid-row: 1/1;
     grid-column: 1/1;
     height: 420px;
     width: 100%;
+}
+.img_1-mob{
+    display: none;
 }
 .text_top{
     grid-column: 2/2;
@@ -42,13 +46,25 @@ body{
     color: #EB9590;
 }
 .text-alert{
-    padding: 30px 26px;
+    line-height: 22px;
+    margin: 0;
+    padding: 10px 26px;
+}
+.min-text-alert{
+    line-height: 10px;
+    font-size: 12px;
+    color: gray;
+    margin: 0;
 }
 .img_2{
+    display: block;
     grid-row: 2/2;
     grid-column: 2/2;
     height: 420px;
     width: 100%;
+}
+.img_2-mob{
+    display: none;
 }
 .text-bottom{
     grid-column: 1/1;
@@ -57,32 +73,17 @@ body{
     line-height: 24px;
 }
 .icon_card-visa{
-    padding: 40px 20px 60px 0;
+    padding: 100px 20px 60px 0;
     height: 25px;
     width: 77px;
 }
-.icon_card-sber{
-    padding: 40px 20px 60px 0;
-    height: 25px;
-    width: 92px;
-}
-.icon_card-gpay{
-    padding: 40px 20px 60px 0;
-    height: 25px;
-    width: 63px;
-}
-.icon_card-alfa{
-    padding: 40px 20px 60px 0;
-    height: 25px;
-    width: 85px;
-}
 .icon_card-master_card{
-    padding: 40px 20px 60px 0;
+    padding: 100px 20px 60px 0;
     height: 25px;
     width: 42px;
 }
 .icon_card-mir{
-    padding: 40px 20px 60px 0;
+    padding: 100px 20px 60px 0;
     height: 25px;
     width: 71px;
 }
@@ -107,6 +108,235 @@ body{
     border-radius: 8px;
     border: 2px solid #EB9590;
 }
-@media{
+@media(max-width: 1600px){
+    .container{
+        font-size: 16px;
+        padding: 90px 100px;
+    }
+    .text-alert{
+        padding: 15px 26px;
+    }
+}
+@media (max-width: 1440px) {
+    .text-top-container ul, .text-top-container p, .text-top-container h1{
+        margin: 10px 0;
+    }
+    .img_1, .img_2{
+        height: 100%;
+    }
+    .text-bank-card{
+        margin: 10px 0;
+    }
+    .text-bottom p{
+        margin: 13px 0;
+    }
+    .icons{
+        padding: 20px 0 0 0;
+    }
+    .icon_card-visa{
+        height: 22px;
+        width: 60px;
+    }
+    .icon_card-sber{
+        height: 22px;
+        width: 72px;
+    }
+    .icon_card-gpay{
+        height: 22px;
+        width: 46px;
+    }
+    .icon_card-alfa{
+        height: 22px;
+        width: 60px;
+    }
+    .icon_card-master_card{
+        height: 22px;
+        width: 33px;
+    }
+    .icon_card-mir{
+        height: 22px;
+        width: 50px;
+    }
+    .text-alert{
+        line-height: 20px;
+    }
+}
+@media(max-width: 1240px){
+    .container{
+        padding: 90px 40px;
+    }
+    .img_1, .img_2{
+        height: 100%;
+    }
+    .text-top-container ul, .text-top-container p, .text-top-container h1{
+        margin: 5px 0;
+    }
+    .text-top-container h1{
+        font-size: 20px;
+    }
+    .text-top-container{
+        line-height: 20px;
+    }
+    .text-bank-card{
+        font-size: 20px;
+    }
+    .icons{
+        padding: 80px 10px;
+    }
+    .icon_card-visa{
+        padding: 10px 0 10px 0;
+    }
+    .icon_card-master_card{
+        padding: 10px 0 10px 0;
+    }
+    .icon_card-mir{
+        padding: 10px 0 10px 0;
+    }
+    .main{
+        row-gap: 30px;
+    }
+    .text-alert{
+        padding: 10px;
+    }
+}
+@media(max-width: 980px){
+    .container{
+        padding: 50px 15px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 20% 25% 20%;
+    }
+    .img_1, .img_2{
+        display: none;
+    }
+    .img_1-mob, .img_2-mob{
+        display: block;
+    }
+    .img_1-mob{
+        padding: 0 10%;
+        width: 80%;
+        height: 100%;
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .img_2-mob{
+        padding: 10px 10% 0 10%;
+        width: 80%;
+        height: 100%;
+        grid-column: 1/1;
+        grid-row: 3/3;
+    }
+    .text-bottom{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    .text_top{
+        grid-column: 1/1;
+        grid-row: 2/2;
+        color: #343434;
+    }
+    .text-top-container p, .text-top-container h1{
+        margin: 10px 0;
+    }
+    .text-top-container ul{
+        font-size: 18px;
+        margin: 0;
+    }
+    .text-top-container p{
+        font-size: 18px;
+    }
+    .text-top-container h1{
+        font-size: 24px;
+    }
+    .text-alert{
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    .icons{
+        padding: 60px 10px;
+    }
+    .icon_card-visa{
+        padding: 10px 5px 10px 0;
+        height: 30px;
+        width: 65px;
+    }
+    .icon_card-master_card{
+        padding: 10px 5px 10px 0;
+        height: 30px;
+        width: 53px;
+    }
+    .icon_card-mir{
+        padding: 10px 5px 10px 0;
+        height: 30px;
+        width: 60px;
+    }
+    .catalog h2{
+        border-bottom: 3px solid #EB9590;
+    }
+}
+@media(max-width: 800px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 600px){
 
+    .img_1-mob, .img_2-mob{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .catalog h2{
+        width: 100%;
+    }
+    .btn-catalog{
+        margin-left: 10px;
+    }
+    .text-top-container ul, .text-top-container p{
+        font-size: 20px;
+    }
+    .text-alert{
+        font-size: 20px;
+    }
+    .min-text-alert{
+        font-size: 14px;
+    }
+    .catalog h2{
+        font-size: 24px;
+    }
+    .text-bank-card{
+        font-size: 24px;
+    }
+    .text-bottom p{
+        font-size: 20px;
+    }
+    .icons{
+        padding: 30px 0;
+    }
+    .icon_card-visa{
+        padding: 10px 5px 10px 0;
+        height: 17px;
+        width: 54px;
+    }
+    .icon_card-master_card{
+        padding: 10px 5px 10px 0;
+        height: 17px;
+        width: 30px;
+    }
+    .icon_card-mir{
+        padding: 10px 5px 10px 0;
+        height: 17px;
+        width: 50px;
+    }
+}
+@media (max-width: 440px) {
+    .catalog h2{
+        font-size: 17px;
+    }
+    .btn-catalog{
+        font-size: 12px;
+        width: 80px;
+    }
 }
