@@ -1,7 +1,15 @@
 .container__dostavka{
     margin: 0;
-    padding: 100px 180px;
+    padding: 100px 0;
     font-family: "Inter", sans-serif;
+    color: #343434;
+}
+.main__dostavka-grey{
+    padding: 10px 180px;
+    background: #F8F8F8;
+}
+.main__dostavka-white{
+    padding: 0 180px;
 }
 .section1{
     display: grid;
@@ -19,6 +27,7 @@
     font-weight: 600;
 }
 .sec1-text{
+    font-size: 20px;
     grid-column: 1/2;
     grid-row: 3/4;
 }
@@ -28,7 +37,7 @@
     width: 100%;
 }
 .text-alert-background{
-    margin-top: 40px;
+    margin: 40px 0;
     background: #FFFFFF;
     color: #EB9590;
     border-left: 5px solid #EB9590;
@@ -37,19 +46,105 @@
     font-size: 20px;
     padding: 11px 0 11px 35px;
 }
-.section2{
+.section2-top{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 320px;
 }
-.section2 img{
+.section2-top img{
+    max-height: 320px;
+    width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
 }
-.section2 div{
+.section2-top div{
+    font-size: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    line-height: 24px;
+}
+.section2-top h1{
+    padding-left: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.section3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 470px;
+}
+.section3-text{
+    font-size: 20px;
+    padding-top: 15%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.section3 a{
+    font-size: 24px;
+    padding: 10px 0;
+    border-bottom: 1px solid #EB9590;
+}
+.section3-p{
+    padding-top: 5px;
+}
+.section3 img{
+    height: 470px;
     grid-column: 2/3;
     grid-row: 1/2;
 }
-.section2-background{}
-
-
+.section4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 280px;
+}
+.section4 div{
+    font-size: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.section4 h1{
+    font-size: 24px;
+}
+.section4 img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 280px;
+}
+.section5{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 48% 50%;
+    column-gap: 30px;
+    grid-template-rows: 390px;
+    font-size: 20px;
+}
+.section5 img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 390px;
+}
+.section5 h1{
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+.btn-dostavka{
+    background: white;
+    color: #EB9590;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 10px;
+    height: 46px;
+    width: 186px;
+    border-radius: 8px;
+    border: 2px solid #EB9590;
+}
+.btn-dostavka:hover{
+    background: #EB9590;
+    color: white;
+    transition: 0.5s;
+}
+.section5 div{
+    line-height: 24px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}

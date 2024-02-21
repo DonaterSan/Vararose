@@ -1,15 +1,18 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
 }
 .container{
-    font-size: 20px;
-    padding: 90px 140px;
     background: #F8F8F8;
 }
-.main{
+.container__oplata{
+    font-size: 20px;
+    padding: 40px 160px;
+    background: #F8F8F8;
+}
+.main__oplata{
     display: grid;
-    row-gap: 30px;
     column-gap: 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -18,7 +21,7 @@ body{
     display: block;
     grid-row: 1/1;
     grid-column: 1/1;
-    height: 420px;
+    height: 380px;
     width: 100%;
 }
 .img_1-mob{
@@ -38,6 +41,9 @@ body{
     line-height: 24px;
 }
 .text-top-container ul{
+    padding-left: 40px;
+}
+.text-top-container li{
     list-style-type: disc;
 }
 .text-alert-background{
@@ -51,16 +57,19 @@ body{
     padding: 10px 26px;
 }
 .min-text-alert{
-    line-height: 10px;
+    line-height: 16px;
     font-size: 12px;
     color: gray;
     margin: 0;
+}
+.text-bank-card{
+    font-size: 24px;
 }
 .img_2{
     display: block;
     grid-row: 2/2;
     grid-column: 2/2;
-    height: 420px;
+    height: 380px;
     width: 100%;
 }
 .img_2-mob{
@@ -72,18 +81,18 @@ body{
     color: #343434;
     line-height: 24px;
 }
+.icons{
+    padding: 30px 20px 30px 0;
+}
 .icon_card-visa{
-    padding: 100px 20px 60px 0;
     height: 25px;
     width: 77px;
 }
 .icon_card-master_card{
-    padding: 100px 20px 60px 0;
     height: 25px;
     width: 42px;
 }
 .icon_card-mir{
-    padding: 100px 20px 60px 0;
     height: 25px;
     width: 71px;
 }
@@ -94,35 +103,49 @@ body{
 }
 .catalog h2{
     padding-bottom: 5px;
-    width: 560px;
+    width: 100%;
     font-weight: 600;
     font-size: 20px;
     border-bottom: 1px solid #EB9590;
 }
 .btn-catalog{
     color: #EB9590;
+    background: white;
     font-weight: 600;
     font-size: 15px;
     height: 46px;
     width: 120px;
     border-radius: 8px;
     border: 2px solid #EB9590;
+    margin-left: 90px;
+}
+.btn-catalog:hover{
+    background-color:#EB9590;
+    color: white;
+    transition: 0.5s;
 }
 @media(max-width: 1600px){
-    .container{
+    .img_1, .img_2{
+        height: 350px;
+    }
+    .container__oplata{
         font-size: 16px;
-        padding: 90px 100px;
+        padding: 40px 120px;
     }
     .text-alert{
+        line-height: 20px;
         padding: 15px 26px;
+    }
+    .icons{
+        padding: 10px;
     }
 }
 @media (max-width: 1440px) {
-    .text-top-container ul, .text-top-container p, .text-top-container h1{
-        margin: 10px 0;
+    .text-top-container p, .text-top-container h1, .text-top-container li{
+        margin: 5px 0;
     }
-    .img_1, .img_2{
-        height: 100%;
+    .text-top-container ul{
+        margin: 0;
     }
     .text-bank-card{
         margin: 10px 0;
@@ -130,46 +153,26 @@ body{
     .text-bottom p{
         margin: 13px 0;
     }
-    .icons{
-        padding: 20px 0 0 0;
-    }
-    .icon_card-visa{
-        height: 22px;
-        width: 60px;
-    }
-    .icon_card-sber{
-        height: 22px;
-        width: 72px;
-    }
-    .icon_card-gpay{
-        height: 22px;
-        width: 46px;
-    }
-    .icon_card-alfa{
-        height: 22px;
-        width: 60px;
-    }
-    .icon_card-master_card{
-        height: 22px;
-        width: 33px;
-    }
-    .icon_card-mir{
-        height: 22px;
-        width: 50px;
-    }
     .text-alert{
         line-height: 20px;
+        padding: 10px 20px;
+    }
+    .icons{
+        padding: 10px;
     }
 }
 @media(max-width: 1240px){
-    .container{
-        padding: 90px 40px;
+    .btn-catalog{
+        margin-left: 40px;
     }
-    .img_1, .img_2{
-        height: 100%;
+    .container__oplata{
+        padding: 30px 40px;
     }
-    .text-top-container ul, .text-top-container p, .text-top-container h1{
-        margin: 5px 0;
+    .text-top-container p, .text-top-container h1, .text-top-container li{
+        margin: 0;
+    }
+    .text-top-container ul{
+        margin: 0;
     }
     .text-top-container h1{
         font-size: 20px;
@@ -181,18 +184,9 @@ body{
         font-size: 20px;
     }
     .icons{
-        padding: 80px 10px;
+        padding: 10px;
     }
-    .icon_card-visa{
-        padding: 10px 0 10px 0;
-    }
-    .icon_card-master_card{
-        padding: 10px 0 10px 0;
-    }
-    .icon_card-mir{
-        padding: 10px 0 10px 0;
-    }
-    .main{
+    .main_oplata{
         row-gap: 30px;
     }
     .text-alert{
@@ -200,12 +194,12 @@ body{
     }
 }
 @media(max-width: 980px){
-    .container{
-        padding: 50px 15px;
+    .main__oplata{
+        display:flex;
+        flex-direction: column;
     }
-    .main{
-        grid-template-columns: 1fr;
-        grid-template-rows: 25% 20% 25% 20%;
+    .container__oplata{
+        padding: 50px 0;
     }
     .img_1, .img_2{
         display: none;
@@ -214,22 +208,21 @@ body{
         display: block;
     }
     .img_1-mob{
-        padding: 0 10%;
-        width: 80%;
+        width: 100%;
         height: 100%;
         grid-column: 1/1;
         grid-row: 1/1;
     }
     .img_2-mob{
-        padding: 10px 10% 0 10%;
-        width: 80%;
+        padding-bottom: 30px;
+        width: 100%;
         height: 100%;
         grid-column: 1/1;
-        grid-row: 3/3;
+        grid-row: 3/4;
     }
     .text-bottom{
         grid-column: 1/1;
-        grid-row: 4/4;
+        grid-row: 4/5;
     }
     .text_top{
         grid-column: 1/1;
@@ -256,33 +249,15 @@ body{
     .icons{
         padding: 60px 10px;
     }
-    .icon_card-visa{
-        padding: 10px 5px 10px 0;
-        height: 30px;
-        width: 65px;
-    }
-    .icon_card-master_card{
-        padding: 10px 5px 10px 0;
-        height: 30px;
-        width: 53px;
-    }
-    .icon_card-mir{
-        padding: 10px 5px 10px 0;
-        height: 30px;
-        width: 60px;
-    }
     .catalog h2{
         border-bottom: 3px solid #EB9590;
+        width: 100%;
     }
-}
-@media(max-width: 800px){
-    .main{
-        display: flex;
-        flex-direction: column;
+    .btn-catalog{
+        margin-left: 10px;
     }
 }
 @media(max-width: 600px){
-
     .img_1-mob, .img_2-mob{
         padding: 0;
         width: 100%;
@@ -315,27 +290,25 @@ body{
     .icons{
         padding: 30px 0;
     }
+    .icon_card-mir{
+        height: 17px;
+        width: 50px;
+    }
     .icon_card-visa{
-        padding: 10px 5px 10px 0;
         height: 17px;
         width: 54px;
     }
     .icon_card-master_card{
-        padding: 10px 5px 10px 0;
         height: 17px;
-        width: 30px;
-    }
-    .icon_card-mir{
-        padding: 10px 5px 10px 0;
-        height: 17px;
-        width: 50px;
+        width: 29px;
     }
 }
-@media (max-width: 440px) {
+@media (max-width: 480px) {
     .catalog h2{
-        font-size: 17px;
+        font-size: 16px;
     }
     .btn-catalog{
+        height: 35px;
         font-size: 12px;
         width: 80px;
     }
