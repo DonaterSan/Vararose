@@ -3,13 +3,34 @@ body{
     padding: 0;
     font-family: "Inter", sans-serif;
 }
-.container{
-    background: #F8F8F8;
-}
 .container__oplata{
     font-size: 16px;
     padding: 40px 160px;
     background: #F8F8F8;
+}
+section.page-top{
+    padding-left: 160px;
+    padding-bottom: 0;
+}
+.title__oplata{
+    padding-left: 160px;
+    font-size: 32px;
+}
+.header__top-part, .header__main-part, .footer__main-part{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1402px;
+    max-width: var(--theme-page-width);
+    max-width: calc(var(--theme-page-width) + calc(2 * var(--theme-page-width-padding)));
+    width: 100%;
+    padding-left: var(--theme-page-width-padding);
+    padding-right: var(--theme-page-width-padding);
+}
+.maxwidth-theme{
+    margin: 0!important;
+    max-width: 10000px !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 .main__oplata{
     display: grid;
@@ -64,7 +85,9 @@ body{
     margin: 0;
 }
 .text-bank-card{
+    margin: 13px 0;
     font-size: 18px;
+
 }
 .img_2{
     display: block;
@@ -83,7 +106,7 @@ body{
     line-height: 24px;
 }
 .icons{
-    padding: 0;
+    padding: 0 0 13px 0;
 }
 .icon_card-visa{
     height: 25px;
@@ -110,8 +133,8 @@ body{
     border-bottom: 1px solid #EB9590;
 }
 .btn-catalog{
-    color: #EB9590;
-    background: white;
+    color: white;
+    background: #EB9590;
     font-weight: 600;
     font-size: 15px;
     height: 46px;
@@ -120,18 +143,23 @@ body{
     border: 2px solid #EB9590;
     margin-left: 90px;
 }
-.btn-catalog:hover{
-    background-color:#EB9590;
-    color: white;
-    transition: 0.5s;
-}
 @media(max-width: 1600px){
+    .icons{
+        padding: 0;
+    }
     .img_1, .img_2{
         height: 380px;
     }
     .container__oplata{
         font-size: 16px;
         padding: 40px 120px;
+    }
+    section.page-top{
+        padding-left: 120px;
+        padding-bottom: 0;
+    }
+    .title__oplata{
+        padding-left: 120px;
     }
     .text-alert{
         line-height: 20px;
@@ -160,16 +188,22 @@ body{
         padding: 10px 20px;
     }
     .icons{
-        padding: 0;
+        padding: 0 0 23px 0;
     }
 }
 @media(max-width: 1240px){
-
     .btn-catalog{
         margin-left: 40px;
     }
     .container__oplata{
         padding: 30px 25px;
+    }
+    section.page-top{
+        padding-left: 25px;
+        padding-bottom: 0;
+    }
+    .title__oplata{
+        padding-left: 25px;
     }
     .text-top-container p, .text-top-container h1, .text-top-container li{
         margin: 0;
@@ -187,7 +221,7 @@ body{
         font-size: 18px;
     }
     .icons{
-        padding: 0;
+        padding: 16px 0 18px 0;
     }
     .main_oplata{
         row-gap: 30px;
@@ -199,13 +233,25 @@ body{
         margin: 8px 0;
     }
 }
-@media(max-width: 980px){
+@media(max-width: 1190px){
+    .icons{
+        padding:  5px 0 8px 0;
+    }
+}
+@media(max-width: 991px){
     .main__oplata{
         display:flex;
         flex-direction: column;
     }
     .container__oplata{
-        padding: 50px 0;
+        padding: 40px 0;
+    }
+    section.page-top{
+        padding-left: 10px;
+        padding-bottom: 0;
+    }
+    .title__oplata{
+        padding-left: 10px;
     }
     .img_1, .img_2{
         display: none;

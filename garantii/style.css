@@ -1,17 +1,39 @@
 .container__garantii{
     margin: 0;
-    padding: 50px 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
     color: #343434;
     font-size: 18px;
 }
+body>.body:not(.index)>.main{
+    padding-bottom: 0 !important;
+}
+.header__top-part, .header__main-part, .footer__main-part{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1402px;
+    max-width: var(--theme-page-width);
+    max-width: calc(var(--theme-page-width) + calc(2 * var(--theme-page-width-padding)));
+    width: 100%;
+    padding-left: var(--theme-page-width-padding);
+    padding-right: var(--theme-page-width-padding);
+}
+.maxwidth-theme{
+    margin: 0!important;
+    max-width: 10000px !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+section.page-top{
+    padding-left: 220px;
+}
 .title__garantii h1{
     font-weight: 500;
-    padding-left: 180px;
+    padding-left: 220px;
     font-size: 32px;
 }
 .text-alert-background{
-    margin: 40px 180px;
+    margin: 40px 220px;
     color: #343434;
     border-left: 5px solid #EB9590;
 }
@@ -33,15 +55,15 @@
     color: #EB9590;
 }
 .text-alert{
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 26px;
 }
 .section-top{
-    padding: 0 180px 80px;
+    padding: 0 220px 50px;
     display: grid;
-    grid-template-columns: 48% 50%;
-    column-gap: 20px;
-    grid-template-rows: 260px;
+    grid-template-columns: 50% 48%;
+    column-gap: 2%;
+    grid-template-rows: 180px;
 }
 .section-top img{
     grid-column: 2/3;
@@ -58,14 +80,22 @@
     flex-direction: column;
     justify-content: end;
 }
+.section-top p{
+    margin-bottom: 0;
+}
+.section-top a{
+    font-weight: 600;
+    color: #343434;
+    border-bottom: 2px solid #EB9590;
+}
 .section-middle_and_bottom{
     background: #F8F8F8;
-    padding: 50px 180px;
+    padding: 50px 220px;
 }
 .section1{
     display: grid;
     grid-template-columns: 48% 50%;
-    grid-template-rows: 450px;
+    grid-template-rows: 400px;
     column-gap: 2%;
     padding-bottom: 30px;
 }
@@ -79,7 +109,10 @@
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .section1 h1{
     font-size: 18px;
@@ -90,8 +123,8 @@
 }
 .section2{
     display: grid;
-    grid-template-columns: 48% 50%;
-    grid-template-rows: 450px;
+    grid-template-columns: 50% 48%;
+    grid-template-rows: 400px;
     column-gap: 2%;
     padding-bottom: 30px;
 }
@@ -105,7 +138,13 @@
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.section2 p{
+    margin: 0;
 }
 .section2 h1{
     font-size: 18px;
@@ -114,7 +153,7 @@
     display: grid;
     grid-template-columns: 48% 50%;
     column-gap: 2%;
-    grid-template-rows: 400px;
+    grid-template-rows: 360px;
 }
 .section3 img{
     width: 100%;
@@ -126,6 +165,22 @@
 }
 .section3 h1{
     font-size: 18px;
+}
+@media(max-width: 1900px){
+    .section3 div{
+        line-height: 17px;
+    }
+}
+@media(max-width: 1800px){
+    .section1 div{
+        line-height: 24px;
+    }
+    .section2 div{
+        line-height: 20px;
+    }
+    .section3 div{
+        line-height: 16px;
+    }
 }
 @media(max-width: 1600px){
     .section-top{
@@ -139,6 +194,12 @@
     }
     .title__garantii h1{
         padding-left: 120px;
+    }
+    section.page-top{
+        padding-left: 120px;
+    }
+    .section3 div{
+        line-height: 17px;
     }
 }
 @media (max-width: 1440px) {
@@ -154,6 +215,18 @@
     .title__garantii h1{
         padding-left: 60px;
         font-size: 32px;
+    }
+    section.page-top{
+        padding-left: 60px;
+    }
+    .section1 div{
+        line-height: 20px;
+    }
+    .section2 div{
+        line-height: 18px;
+    }
+    .section3 div{
+        line-height: 16px;
     }
 }
 @media(max-width: 1240px){
@@ -173,6 +246,18 @@
         padding-left: 20px;
         font-size: 32px;
     }
+    section.page-top{
+        padding-left: 20px;
+    }
+    .section1 div{
+        line-height: 18px;
+    }
+    .section2 div{
+        line-height: 16px;
+    }
+    .section3 div{
+        line-height: 14px;
+    }
 }
 @media (max-width: 991px) {
     .title__garantii h1{
@@ -183,6 +268,9 @@
         padding: 0 10px 20px;
         display: flex;
         flex-direction: column;
+    }
+    section.page-top{
+        padding-left: 10px;
     }
     .section1{
         display: flex;
