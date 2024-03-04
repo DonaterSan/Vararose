@@ -1,0 +1,88 @@
+.container{
+    font-family: "Inter", sans-serif;
+    color: #343434;
+}
+/* Кнопка, используемая для открытия контактной формы-фиксируется в нижней части страницы */
+.open-btn {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.close{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 15px;
+    font-size: 20px;
+}
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+    display: none;
+    border: 3px solid #f1f1f1;
+    width: 610px;
+    border-radius: 20px;
+}
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* Добавление стилей в контейнер форм */
+.form-container {
+    padding: 10px;
+    width: 86%;
+    background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 30px 22px 10px;
+    border: 2px solid #DADADA;
+    border-radius: 8px;
+    background: white;
+}
+h1{
+    font-size: 24px;
+}
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    outline: none;
+}
+
+/* Установите стиль для кнопки отправить/кнопка */
+.form-container .btn__namek {
+    background-color: #EB9590;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom:10px;
+}
+.btn_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.red-color-strong{
+    color: red;
+}
+.title__namek{
+    padding-left: 20px;
+}
+label{
+    padding-left: 10px;
+}

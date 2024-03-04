@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <button class="open__btn" onclick="openForm()">Сделать намек</button>
+    <div class="form-popup" id="myForm">
+        <div id="popup">
+            <p class="close" onclick="closeForm()">x</p>
+            <h1 class="title__namek">Кому отправить намек</h1>
+            <form action="namek.php" class="form-container" method="post">
+                <label for="user_name"><b>Имя<b class="red-color-strong">*</b></b></label>
+                <input type="text" name="user_name" id="user_name" class="form__input">
+
+                <label for="phone"><b>Телефон<b class="red-color-strong">*</b></b></label>
+                <input type="text" name="phone" id="phone" class="form__input">
+                <div class="btn_container">
+                    <button type="submit" class="btn__namek">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+        $('.backpopup,.close').click(function(){ //событие клик на тень и крестик - закрываем окно и тень:
+            $('.popup-window').fadeOut();
+            $('.backpopup').fadeOut();
+        });
+    </script>
+</div>
+</body>
+</html>
