@@ -29,7 +29,7 @@
     border-radius: 20px;
     background-color: white;
     width: 580px;
-    height: 350px;
+    height: 380px;
     padding: 20px;
 }
 
@@ -100,7 +100,7 @@ h1{
     font-weight: 400;
     /* padding-bottom: 10px; */
 }
-b{
+#{
     color: rgb(204,204,204);
 }
 #back{

@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="backpopup" id="back" onclick="closeForm()"></div>
+    <button class="open__btn" onclick="openForm()">Нажми меня</button>
+    <div class="form-popup" id="myForm">
+        <div id="popup">
+            <div class="close_container">
+                <img src="img/icon/img.png" class="close" onclick="closeForm()">
+            </div>
+            <p class="title-namek">Оставьте свой номер телефона
+                и мы перезвоним вам.<br>
+                Поможем с выбором букета и ответим на все вопросы!</p>
+            <form action="client.php" class="form-container" method="post">
+                <div class="user">
+                    <label for="user_name"><b class="text__form">Имя<b class="red-color-strong">*</b></b></label>
+                    <input type="text" name="user_name" id="user_name" class="form__input">
+                </div>
+                <div class="phone_user">
+                    <label for="phone"><b class="text__form">Телефон<b class="red-color-strong">*</b></b></label>
+                    <input type="text" name="phone" id="phone" class="form__input">
+                </div>
+                <div class="btn_container">
+                    <button type="submit" class="btn__namek">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("back").style.display = "none";
+        }
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById("back").style.display = "block";
+        }
+    </script>
+</div>
+<style>
+    .container{
+        font-family: "Inter", sans-serif;
+        color: #343434;
+    }
+    .close{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .form-popup{
+        display: none;
+    }
+    #popup {
+        position: fixed;
+        top: 50%;
+        z-index: 500;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        background-color: white;
+        width: 580px;
+        height: 380px;
+        padding: 20px;
+    }
+
+    .form-container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 95%;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+    }
+    .user{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px 0;
+        margin: 15px 0 22px 0;
+        border: 1px solid #DADADA;
+        border-radius: 8px;
+        background: white;
+    }
+    h1{
+        font-size: 24px;
+    }
+    /* Когда входы получают фокус, сделайте что-нибудь */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+        outline: none;
+    }
+
+    /* Установите стиль для кнопки отправить/кнопка */
+    .btn__namek {
+        background-color: #EB9590;
+        font-size: 16px;
+        color: white;
+        padding: 14px 28px;
+        border: none;
+        width: 25%;
+        border-radius: 8px;
+        margin-bottom:10px;
+        cursor: pointer;
+    }
+    .btn_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .red-color-strong{
+        color: red;
+    }
+    .close_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .close{
+        width: 24px;
+        height: 24px;
+        left: 571px;
+        top: 15px;
+    }
+    .title-namek{
+        margin: 10px 0 30px;
+        font-size: 22px;
+        font-weight: 400;
+        /* padding-bottom: 10px; */
+    }
+    .text__form{
+    color: rgb(204,204,204);
+        font-weight: 200;
+    }
+    #back{
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgb(105, 105, 105);
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        z-index: 400;
+        cursor: pointer;
+    }
+</style>
+</body>
+</html>
