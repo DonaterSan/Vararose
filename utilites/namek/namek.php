@@ -56,7 +56,6 @@ if ((!empty($_POST['user_name'])) && (!empty($_POST['phone']))) {
     $file_content = file_get_contents(filename: "clients.txt");
     file_put_contents(filename: "clients.txt", data: $file_content . "Имя получателя: " . $_POST['user_name'] . ". Номер получателя: " . $_POST['phone'] . "\n");
 }
-header("Location: http://localhost:63342/ViraRose/utilites/namek/namek.html");
 
 ?>
 </body>
