@@ -14,21 +14,21 @@
             <div class="close_container">
                 <img src="img/icon/img.png" alt="" class="close" id="close" onclick="closeForm()">
             </div>
-            <form action="" id="myForm">
+            <form action="posts.php" id="myForm" method="post">
                 <div class="section1" id="openForm__1">
                     <h1 class="title_podbor">Быстрый подбор букета</h1>
                     <p>Для кого вы подбираете букет?</p>
                     <div class="form_top">
                         <div class="circle">
-                            <input type="radio" id="form_1-check-man" name="check" class="circle-radio">
+                            <input type="radio" id="form_1-check-man" name="check_komu" value="form_1-check-man" class="circle-radio">
                             <label for="form_1-check-man">папе/парню</label>
                         </div>
                         <div class="circle">
-                            <input type="radio" id="form_1-check-girl1" name="check" class="circle-radio">
+                            <input type="radio" id="form_1-check-girl1" name="check_komu" value="form_1-check-girl1" class="circle-radio">
                             <label for="form_1-check-girl1">девушке/жене</label>
                         </div>
                         <div class="circle">
-                            <input type="radio" id="form_1-check-girl2" name="check" class="circle-radio">
+                            <input type="radio" id="form_1-check-girl2" name="check_komu" value="form_1-check-girl2" class="circle-radio">
                             <label for="form_1-check-girl2">маме/бабушке</label>
                         </div>
                     </div>
@@ -37,15 +37,15 @@
 
                     <div class="form_bot">
                         <div class="circle">
-                            <input type="radio" id="form_1-check-girl3" name="check" class="circle-radio">
+                            <input type="radio" id="form_1-check-girl3" name="check_komu" value="form_1-check-girl3" class="circle-radio">
                             <label for="form_1-check-girl3">подруге</label>
                         </div>
                         <div class="circle">
-                            <input type="radio" id="form_1-check-chief" name="check" class="circle-radio">
+                            <input type="radio" id="form_1-check-chief" name="check_komu" value="form_1-check-chief" class="circle-radio">
                             <label for="form_1-check-chief">начальнику</label>
                         </div>
                         <div class="circle">
-                            <input type="radio" id="form_1-check-classic" name="check" class="circle-radio">
+                            <input type="radio" id="form_1-check-classic" name="check_komu" value="form_1-check-classic" class="circle-radio">
                             <label for="form_1-check-classic">классика</label>
                         </div>
                     </div>
@@ -58,16 +58,16 @@
                     <div>
                         <div class="form_top">
                             <div>
-                                <input type="radio" id="form_1-check-man" name="check" class="circle-radio">
-                                <label for="form_1-check-man">до 2000 ₽ </label>
+                                <input type="radio" id="do_2000" name="check_value" value="do_2000" class="circle-radio">
+                                <label for="do_2000">до 2000 ₽ </label>
                             </div>
                             <div>
-                                <input type="radio" id="form_1-check-girl1" name="check" class="circle-radio">
-                                <label for="form_1-check-girl1">от 2000 ₽ до 3500 ₽</label>
+                                <input type="radio" id="ot_2000" name="check_value" value="ot_2000" class="circle-radio">
+                                <label for="ot_2000">от 2000 ₽ до 3500 ₽</label>
                             </div>
                             <div>
-                                <input type="radio" id="form_1-check-girl2" name="check" class="circle-radio">
-                                <label for="form_1-check-girl2">от 3500 ₽ до 5000 ₽</label>
+                                <input type="radio" id="ot_3500" name="check_value" value="ot_3500" class="circle-radio">
+                                <label for="ot_3500">от 3500 ₽ до 5000 ₽</label>
                             </div>
                         </div>
 
@@ -75,8 +75,8 @@
 
                         <div class="form_bot">
                             <div class="circle">
-                                <input type="radio" id="form_1-check-girl3" name="check" class="circle-radio">
-                                <label for="form_1-check-girl3">свыше 5000 ₽</label>
+                                <input type="radio" id="ot_5000" name="check_value" value="ot_5000" class="circle-radio">
+                                <label for="ot_5000">свыше 5000 ₽</label>
                             </div>
                         </div>
 
@@ -90,20 +90,20 @@
                     <div class="">
                         <div class="form_top">
                             <div class="circle">
-                                <input type="radio" id="form_1-check-man" name="check" class="circle-radio">
-                                <label for="form_1-check-man">Роза</label>
+                                <input type="radio" id="rose" name="check_flower" value="rose" class="circle-radio">
+                                <label for="rose">Роза</label>
                             </div>
                             <div class="circle">
-                                <input type="radio" id="form_1-check-girl1" name="check" class="circle-radio">
-                                <label for="form_1-check-girl1">Хризантема</label>
+                                <input type="radio" id="hrizantema" name="check_flower" value="hrizantema" class="circle-radio">
+                                <label for="hrizantema">Хризантема</label>
                             </div>
                             <div class="circle">
-                                <input type="radio" id="form_1-check-girl2" name="check" class="circle-radio">
-                                <label for="form_1-check-girl2">Лилия</label>
+                                <input type="radio" id="hrizantema" name="check_flower" value="hrizantema" class="circle-radio">
+                                <label for="hrizantema">Лилия</label>
                             </div>
                             <div class="circle">
-                                <input type="radio" id="form_1-check-girl3" name="check" class="circle-radio">
-                                <label for="form_1-check-chief">Орхидея</label>
+                                <input type="radio" id="orhidia" name="check_flower" value="orhidia" class="circle-radio">
+                                <label for="orhidia">Орхидея</label>
                             </div>
                         </div>
 
@@ -111,12 +111,12 @@
 
                         <div class="form_bot">
                             <div class="circle">
-                                <input type="radio" id="form_1-check-chief" name="check" class="circle-radio">
-                                <label for="form_1-check-chief">Гербера</label>
+                                <input type="radio" id="gerbera" name="check_flower" value="gerbera" class="circle-radio">
+                                <label for="gerbera">Гербера</label>
                             </div>
                             <div class="circle">
-                                <input type="radio" id="form_1-check-classic" name="check" class="circle-radio">
-                                <label for="form_1-check-classic">Не знаю</label>
+                                <input type="radio" id="dont_know" name="check_flower" value="dont_know" class="circle-radio">
+                                <label for="dont_know">Не знаю</label>
                             </div>
                         </div>
 
